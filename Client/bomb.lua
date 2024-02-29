@@ -1,3 +1,3 @@
 local arg = { ... }
 rednet.open("right")
-rednet.broadcast(arg[1],"bombs")
+rednet.broadcast(tonumber(arg[1]),"bombs")
