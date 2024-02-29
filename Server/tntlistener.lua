@@ -24,7 +24,7 @@ function fire(fires)
     end
     end
     
-    rednet.open("front")
+    rednet.open("top")
     print("Listening for bomb command")
     listen()
     
