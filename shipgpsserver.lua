@@ -6,8 +6,10 @@
     if (msg == "get") then 
         print("Request for ship position recieved")
         loc = ship.getWorldspacePosition()
-        print(loc)
-        rednet.broadcast(loc,"shiplocreply")
+        print("X: " .. pos.x)
+        print("Y: " .. pos.y)
+        print("Z: " .. pos.z)
+        rednet.broadcast("X: " .. pos.x .. " Y: " .. pos.y .. " Z: " .. pos.z,"shiplocreply")
 
 
     end
