@@ -5,7 +5,7 @@
     
     if (msg == "get") then 
         print("Request for ship position recieved")
-        loc = ship.getWorldspacePosition()
+        pos = ship.getWorldspacePosition()
         print("X: " .. pos.x)
         print("Y: " .. pos.y)
         print("Z: " .. pos.z)
