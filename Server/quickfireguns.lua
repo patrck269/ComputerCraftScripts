@@ -1,4 +1,4 @@
-rednet.open("left")
+rednet.open("right")
 while true do
 while not rs.getInput("top") do
 os.sleep(.2)
