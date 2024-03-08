@@ -1,14 +1,11 @@
 function fire(fires)
-    rs.setOutput("left",false)
-    rs.setOutput("right",false)
+    rs.setOutput("front",false)
     --print(fires)
     while (fires > 0) do
     print(fires)
-    rs.setOutput("left",true)
-    rs.setOutput("right",true)
+    rs.setOutput("front",true)
     os.sleep(.1)
-    rs.setOutput("left",false)
-    rs.setOutput("right",false)
+    rs.setOutput("front",false)
     os.sleep(.1)
     fires = fires - 1
     end
